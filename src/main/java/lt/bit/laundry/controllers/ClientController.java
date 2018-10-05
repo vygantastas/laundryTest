@@ -7,11 +7,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 
 import lt.bit.laundry.entity.Client;
-import lt.bit.laundry.entity.Note;
 import lt.bit.laundry.service.ClientService;
 
 @Controller
@@ -21,7 +18,7 @@ public class ClientController {
     private String sortDateMethod = "ASC";
 
     @Autowired
-    public void setNoteService(ClientService service) {
+    public void setClientService(ClientService service) {
         this.service = service;
     }
 
